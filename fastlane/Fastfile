@@ -22,7 +22,7 @@ lane :deploy do
     if git_branch() == "master"
         version = get_version_number()
         set_github_release(
-            repository_name: "siilver777/SwiftyFramework",
+            repository_name: "ESGIProjects/SwifTools",
             name: version,
             tag_name: "v#{version}",
             api_token: ENV["GITHUB_TOKEN"],

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D796C3E91E2AD20E00CF8076"
-               BuildableName = "SwiftyFramework.framework"
-               BlueprintName = "SwiftyFramework"
-               ReferencedContainer = "container:SwiftyFramework.xcodeproj">
+               BuildableName = "SwifTools.framework"
+               BlueprintName = "SwifTools"
+               ReferencedContainer = "container:SwifTools.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D796C3F21E2AD20E00CF8076"
-               BuildableName = "SwiftyFrameworkTests.xctest"
-               BlueprintName = "SwiftyFrameworkTests"
-               ReferencedContainer = "container:SwiftyFramework.xcodeproj">
+               BuildableName = "SwifToolsTests.xctest"
+               BlueprintName = "SwifToolsTests"
+               ReferencedContainer = "container:SwifTools.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D796C3E91E2AD20E00CF8076"
-            BuildableName = "SwiftyFramework.framework"
-            BlueprintName = "SwiftyFramework"
-            ReferencedContainer = "container:SwiftyFramework.xcodeproj">
+            BuildableName = "SwifTools.framework"
+            BlueprintName = "SwifTools"
+            ReferencedContainer = "container:SwifTools.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D796C3E91E2AD20E00CF8076"
-            BuildableName = "SwiftyFramework.framework"
-            BlueprintName = "SwiftyFramework"
-            ReferencedContainer = "container:SwiftyFramework.xcodeproj">
+            BuildableName = "SwifTools.framework"
+            BlueprintName = "SwifTools"
+            ReferencedContainer = "container:SwifTools.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D796C3E91E2AD20E00CF8076"
-            BuildableName = "SwiftyFramework.framework"
-            BlueprintName = "SwiftyFramework"
-            ReferencedContainer = "container:SwiftyFramework.xcodeproj">
+            BuildableName = "SwifTools.framework"
+            BlueprintName = "SwifTools"
+            ReferencedContainer = "container:SwifTools.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

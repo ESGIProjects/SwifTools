@@ -1,6 +1,6 @@
 //
 //  STConstraints.swift
-//  SwiftyFramework
+//  SwifTools
 //
 //  Created by Jason Pierna on 27/01/2017.
 //  Copyright © 2017 Jason Pierna & Kévin Le. All rights reserved.

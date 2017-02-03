@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D7030BA21E3B78D80053BB13 /* STConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7030BA11E3B78D80053BB13 /* STConstraints.swift */; };
-		D796C3F41E2AD20E00CF8076 /* SwiftyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D796C3EA1E2AD20E00CF8076 /* SwiftyFramework.framework */; };
+		D796C3F41E2AD20E00CF8076 /* SwifTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D796C3EA1E2AD20E00CF8076 /* SwifTools.framework */; };
 		D796C3F91E2AD20E00CF8076 /* SwiftyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796C3F81E2AD20E00CF8076 /* SwiftyFrameworkTests.swift */; };
-		D796C3FB1E2AD20E00CF8076 /* SwiftyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D796C3ED1E2AD20E00CF8076 /* SwiftyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D796C3FB1E2AD20E00CF8076 /* SwifTools.h in Headers */ = {isa = PBXBuildFile; fileRef = D796C3ED1E2AD20E00CF8076 /* SwifTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +25,10 @@
 
 /* Begin PBXFileReference section */
 		D7030BA11E3B78D80053BB13 /* STConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STConstraints.swift; sourceTree = "<group>"; };
-		D796C3EA1E2AD20E00CF8076 /* SwiftyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D796C3ED1E2AD20E00CF8076 /* SwiftyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyFramework.h; sourceTree = "<group>"; };
+		D796C3EA1E2AD20E00CF8076 /* SwifTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwifTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D796C3ED1E2AD20E00CF8076 /* SwifTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwifTools.h; sourceTree = "<group>"; };
 		D796C3EE1E2AD20E00CF8076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D796C3F31E2AD20E00CF8076 /* SwiftyFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D796C3F31E2AD20E00CF8076 /* SwifToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwifToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D796C3F81E2AD20E00CF8076 /* SwiftyFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyFrameworkTests.swift; sourceTree = "<group>"; };
 		D796C3FA1E2AD20E00CF8076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D796C3F41E2AD20E00CF8076 /* SwiftyFramework.framework in Frameworks */,
+				D796C3F41E2AD20E00CF8076 /* SwifTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +55,8 @@
 		D796C3E01E2AD20E00CF8076 = {
 			isa = PBXGroup;
 			children = (
-				D796C3EC1E2AD20E00CF8076 /* SwiftyFramework */,
-				D796C3F71E2AD20E00CF8076 /* SwiftyFrameworkTests */,
+				D796C3EC1E2AD20E00CF8076 /* SwifTools */,
+				D796C3F71E2AD20E00CF8076 /* SwifToolsTests */,
 				D796C3EB1E2AD20E00CF8076 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,29 +64,29 @@
 		D796C3EB1E2AD20E00CF8076 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D796C3EA1E2AD20E00CF8076 /* SwiftyFramework.framework */,
-				D796C3F31E2AD20E00CF8076 /* SwiftyFrameworkTests.xctest */,
+				D796C3EA1E2AD20E00CF8076 /* SwifTools.framework */,
+				D796C3F31E2AD20E00CF8076 /* SwifToolsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D796C3EC1E2AD20E00CF8076 /* SwiftyFramework */ = {
+		D796C3EC1E2AD20E00CF8076 /* SwifTools */ = {
 			isa = PBXGroup;
 			children = (
-				D796C3ED1E2AD20E00CF8076 /* SwiftyFramework.h */,
+				D796C3ED1E2AD20E00CF8076 /* SwifTools.h */,
 				D7030BA11E3B78D80053BB13 /* STConstraints.swift */,
 				D796C3EE1E2AD20E00CF8076 /* Info.plist */,
 			);
-			path = SwiftyFramework;
+			path = SwifTools;
 			sourceTree = "<group>";
 		};
-		D796C3F71E2AD20E00CF8076 /* SwiftyFrameworkTests */ = {
+		D796C3F71E2AD20E00CF8076 /* SwifToolsTests */ = {
 			isa = PBXGroup;
 			children = (
 				D796C3F81E2AD20E00CF8076 /* SwiftyFrameworkTests.swift */,
 				D796C3FA1E2AD20E00CF8076 /* Info.plist */,
 			);
-			path = SwiftyFrameworkTests;
+			path = SwifToolsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,16 +96,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D796C3FB1E2AD20E00CF8076 /* SwiftyFramework.h in Headers */,
+				D796C3FB1E2AD20E00CF8076 /* SwifTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D796C3E91E2AD20E00CF8076 /* SwiftyFramework */ = {
+		D796C3E91E2AD20E00CF8076 /* SwifTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D796C3FE1E2AD20E00CF8076 /* Build configuration list for PBXNativeTarget "SwiftyFramework" */;
+			buildConfigurationList = D796C3FE1E2AD20E00CF8076 /* Build configuration list for PBXNativeTarget "SwifTools" */;
 			buildPhases = (
 				D796C3E51E2AD20E00CF8076 /* Sources */,
 				D796C3E61E2AD20E00CF8076 /* Frameworks */,
@@ -116,14 +116,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftyFramework;
+			name = SwifTools;
 			productName = SwiftyFramework;
-			productReference = D796C3EA1E2AD20E00CF8076 /* SwiftyFramework.framework */;
+			productReference = D796C3EA1E2AD20E00CF8076 /* SwifTools.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D796C3F21E2AD20E00CF8076 /* SwiftyFrameworkTests */ = {
+		D796C3F21E2AD20E00CF8076 /* SwifToolsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D796C4011E2AD20E00CF8076 /* Build configuration list for PBXNativeTarget "SwiftyFrameworkTests" */;
+			buildConfigurationList = D796C4011E2AD20E00CF8076 /* Build configuration list for PBXNativeTarget "SwifToolsTests" */;
 			buildPhases = (
 				D796C3EF1E2AD20E00CF8076 /* Sources */,
 				D796C3F01E2AD20E00CF8076 /* Frameworks */,
@@ -134,9 +134,9 @@
 			dependencies = (
 				D796C3F61E2AD20E00CF8076 /* PBXTargetDependency */,
 			);
-			name = SwiftyFrameworkTests;
+			name = SwifToolsTests;
 			productName = SwiftyFrameworkTests;
-			productReference = D796C3F31E2AD20E00CF8076 /* SwiftyFrameworkTests.xctest */;
+			productReference = D796C3F31E2AD20E00CF8076 /* SwifToolsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D796C3E41E2AD20E00CF8076 /* Build configuration list for PBXProject "SwiftyFramework" */;
+			buildConfigurationList = D796C3E41E2AD20E00CF8076 /* Build configuration list for PBXProject "SwifTools" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -174,8 +174,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D796C3E91E2AD20E00CF8076 /* SwiftyFramework */,
-				D796C3F21E2AD20E00CF8076 /* SwiftyFrameworkTests */,
+				D796C3E91E2AD20E00CF8076 /* SwifTools */,
+				D796C3F21E2AD20E00CF8076 /* SwifToolsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,7 +219,7 @@
 /* Begin PBXTargetDependency section */
 		D796C3F61E2AD20E00CF8076 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D796C3E91E2AD20E00CF8076 /* SwiftyFramework */;
+			target = D796C3E91E2AD20E00CF8076 /* SwifTools */;
 			targetProxy = D796C3F51E2AD20E00CF8076 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -334,10 +334,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyFramework/Info.plist;
+				INFOPLIST_FILE = SwifTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lepierna.SwiftyFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lepierna.SwifTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -355,10 +355,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyFramework/Info.plist;
+				INFOPLIST_FILE = SwifTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lepierna.SwiftyFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lepierna.SwifTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -394,7 +394,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D796C3E41E2AD20E00CF8076 /* Build configuration list for PBXProject "SwiftyFramework" */ = {
+		D796C3E41E2AD20E00CF8076 /* Build configuration list for PBXProject "SwifTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D796C3FC1E2AD20E00CF8076 /* Debug */,
@@ -403,7 +403,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D796C3FE1E2AD20E00CF8076 /* Build configuration list for PBXNativeTarget "SwiftyFramework" */ = {
+		D796C3FE1E2AD20E00CF8076 /* Build configuration list for PBXNativeTarget "SwifTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D796C3FF1E2AD20E00CF8076 /* Debug */,
@@ -412,7 +412,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D796C4011E2AD20E00CF8076 /* Build configuration list for PBXNativeTarget "SwiftyFrameworkTests" */ = {
+		D796C4011E2AD20E00CF8076 /* Build configuration list for PBXNativeTarget "SwifToolsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D796C4021E2AD20E00CF8076 /* Debug */,
