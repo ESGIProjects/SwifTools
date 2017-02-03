@@ -9,48 +9,85 @@
 import UIKit
 
 class STConstraints {
-    
     enum Sides {
         case left, right, top, bottom, leading, trailing
     }
     
-    public static func addConstraint(parent firstView: UIView, child secondView: UIView, side: STConstraints.Sides) {
-        addConstraints(parent: firstView, child: secondView, sides: [side])
+    enum Sizes {
+        case width, height
     }
     
-    public static func addConstraints(parent firstView: UIView, child secondView: UIView, sides: [STConstraints.Sides]) {
+    public static func addSizeConstraints(view: UIView, sizes: [STConstraints.Sizes], value: CGFloat) {
+        view.translatesAutoresizingMaskIntoConstraints = false
         
-        for side in sides {
-            switch side {
-            case .left:
-                applyXAxis(first: firstView.leftAnchor, second: secondView.leftAnchor)
-            case .right:
-                applyXAxis(first: firstView.rightAnchor, second: secondView.rightAnchor)
-            case .leading:
-                applyXAxis(first: firstView.leadingAnchor, second: secondView.leadingAnchor)
-            case .trailing:
-                applyXAxis(first: firstView.trailingAnchor, second: secondView.trailingAnchor)
-            case .top:
-                applyYAxis(first: firstView.topAnchor, second: secondView.topAnchor)
-            case .bottom:
-                applyYAxis(first: firstView.bottomAnchor, second: secondView.bottomAnchor)
+        for size in sizes {
+            switch size {
+            case .width:
+                view.widthAnchor.constraint(equalToConstant: value).isActive = true
+            case .height:
+                view.heightAnchor.constraint(equalToConstant: value).isActive = true
+                
             }
         }
     }
     
-    public static func addConstraint(between firstView: UIView, and secondView: UIView, side: STConstraints.Sides) {
-        addConstraints(between: firstView, and: secondView, sides: [side])
-    }
-    
-    public static func addConstraints(between firstView: UIView, and secondView: UIView, sides: [STConstraints.Sides]) {
+    public static func addConstraints(parent firstView: UIView, child secondView: UIView, sides: [STConstraints.Sides], constant: CGFloat) {
+        firstView.translatesAutoresizingMaskIntoConstraints = false
+        secondView.translatesAutoresizingMaskIntoConstraints = false
         
+        for side in sides {
+            switch side {
+            case .left:
+                applyXAxis(first: firstView.leftAnchor, second: secondView.leftAnchor, constant: constant)
+            case .right:
+                applyXAxis(first: firstView.rightAnchor, second: secondView.rightAnchor, constant: constant)
+            case .leading:
+                applyXAxis(first: firstView.leadingAnchor, second: secondView.leadingAnchor, constant: constant)
+            case .trailing:
+                applyXAxis(first: firstView.trailingAnchor, second: secondView.trailingAnchor, constant: constant)
+            case .top:
+                applyYAxis(first: firstView.topAnchor, second: secondView.topAnchor, constant: constant)
+            case .bottom:
+                applyYAxis(first: firstView.bottomAnchor, second: secondView.bottomAnchor, constant: constant)
+            }
+        }
     }
     
-    private static func applyXAxis(first: NSLayoutXAxisAnchor, second: NSLayoutXAxisAnchor) {
-        first.constraint(equalTo: second).isActive = true
+    public static func addConstraints(parent firstView: UIView, child secondView: UIView, sides: [STConstraints.Sides]) {
+        addConstraints(parent: firstView, child: secondView, sides: sides, constant: 0)
+    }
+
+    public static func addConstraints(between firstView: UIView, and secondView: UIView, sides: [STConstraints.Sides]) {
+        addConstraints(between: firstView, and: secondView, sides: sides, constant: 0)
     }
     
-    private static func applyYAxis(first: NSLayoutYAxisAnchor, second: NSLayoutYAxisAnchor) {
-        first.constraint(equalTo: second).isActive = true
+    public static func addConstraints(between firstView: UIView, and secondView: UIView, sides: [STConstraints.Sides], constant: CGFloat) {
+        firstView.translatesAutoresizingMaskIntoConstraints = false
+        secondView.translatesAutoresizingMaskIntoConstraints = false
+        
+        for side in sides {
+            switch side {
+            case .left:
+                applyXAxis(first: firstView.leftAnchor, second: secondView.rightAnchor, constant: constant)
+            case .right:
+                applyXAxis(first: firstView.rightAnchor, second: secondView.leftAnchor, constant: constant)
+            case .leading:
+                applyXAxis(first: firstView.leadingAnchor, second: secondView.trailingAnchor, constant: constant)
+            case .trailing:
+                applyXAxis(first: firstView.trailingAnchor, second: secondView.leadingAnchor, constant: constant)
+            case .top:
+                applyYAxis(first: firstView.topAnchor, second: secondView.bottomAnchor, constant: constant)
+            case .bottom:
+                applyYAxis(first: firstView.bottomAnchor, second: secondView.topAnchor, constant: constant)
+            }
+        }
+    }
+    
+    private static func applyXAxis(first: NSLayoutXAxisAnchor, second: NSLayoutXAxisAnchor, constant: CGFloat) {
+        first.constraint(equalTo: second, constant: constant).isActive = true
+    }
+    
+    private static func applyYAxis(first: NSLayoutYAxisAnchor, second: NSLayoutYAxisAnchor, constant: CGFloat) {
+        first.constraint(equalTo: second, constant: constant).isActive = true
     }
 }
