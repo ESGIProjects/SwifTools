@@ -8,12 +8,12 @@
 
 import UIKit
 
-class STConstraints {
-    enum Sides {
+public class STConstraints {
+    public enum Sides {
         case left, right, top, bottom, leading, trailing
     }
     
-    enum Sizes {
+    public enum Sizes {
         case width, height
     }
     
