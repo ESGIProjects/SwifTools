@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7030BA21E3B78D80053BB13 /* STConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7030BA11E3B78D80053BB13 /* STConstraints.swift */; };
 		D796C3F41E2AD20E00CF8076 /* SwiftyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D796C3EA1E2AD20E00CF8076 /* SwiftyFramework.framework */; };
 		D796C3F91E2AD20E00CF8076 /* SwiftyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796C3F81E2AD20E00CF8076 /* SwiftyFrameworkTests.swift */; };
 		D796C3FB1E2AD20E00CF8076 /* SwiftyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D796C3ED1E2AD20E00CF8076 /* SwiftyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7030BA11E3B78D80053BB13 /* STConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STConstraints.swift; sourceTree = "<group>"; };
 		D796C3EA1E2AD20E00CF8076 /* SwiftyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D796C3ED1E2AD20E00CF8076 /* SwiftyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyFramework.h; sourceTree = "<group>"; };
 		D796C3EE1E2AD20E00CF8076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				D796C3ED1E2AD20E00CF8076 /* SwiftyFramework.h */,
+				D7030BA11E3B78D80053BB13 /* STConstraints.swift */,
 				D796C3EE1E2AD20E00CF8076 /* Info.plist */,
 			);
 			path = SwiftyFramework;
@@ -149,6 +152,7 @@
 					D796C3E91E2AD20E00CF8076 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 5RUJTG3BGA;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D796C3F21E2AD20E00CF8076 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7030BA21E3B78D80053BB13 /* STConstraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		D796C3FF1E2AD20E00CF8076 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5RUJTG3BGA;
@@ -334,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lepierna.SwiftyFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +348,7 @@
 		D796C4001E2AD20E00CF8076 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5RUJTG3BGA;
@@ -360,6 +368,7 @@
 		D796C4021E2AD20E00CF8076 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5RUJTG3BGA;
 				INFOPLIST_FILE = SwiftyFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +381,7 @@
 		D796C4031E2AD20E00CF8076 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5RUJTG3BGA;
 				INFOPLIST_FILE = SwiftyFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +410,7 @@
 				D796C4001E2AD20E00CF8076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D796C4011E2AD20E00CF8076 /* Build configuration list for PBXNativeTarget "SwiftyFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +419,7 @@
 				D796C4031E2AD20E00CF8076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
