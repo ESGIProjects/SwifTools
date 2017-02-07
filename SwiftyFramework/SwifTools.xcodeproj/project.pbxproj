@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE65327B1E49024C004D12C6 /* STTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65327A1E49024B004D12C6 /* STTouchID.swift */; };
+		AE65329E1E4A61E9004D12C6 /* STTouchIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65329D1E4A61E9004D12C6 /* STTouchIDTests.swift */; };
 		D7030BA21E3B78D80053BB13 /* STConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7030BA11E3B78D80053BB13 /* STConstraints.swift */; };
 		D796C3F41E2AD20E00CF8076 /* SwifTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D796C3EA1E2AD20E00CF8076 /* SwifTools.framework */; };
-		D796C3F91E2AD20E00CF8076 /* SwiftyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796C3F81E2AD20E00CF8076 /* SwiftyFrameworkTests.swift */; };
 		D796C3FB1E2AD20E00CF8076 /* SwifTools.h in Headers */ = {isa = PBXBuildFile; fileRef = D796C3ED1E2AD20E00CF8076 /* SwifTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -24,12 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE65327A1E49024B004D12C6 /* STTouchID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STTouchID.swift; sourceTree = "<group>"; };
+		AE65329D1E4A61E9004D12C6 /* STTouchIDTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STTouchIDTests.swift; sourceTree = "<group>"; };
 		D7030BA11E3B78D80053BB13 /* STConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STConstraints.swift; sourceTree = "<group>"; };
 		D796C3EA1E2AD20E00CF8076 /* SwifTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwifTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D796C3ED1E2AD20E00CF8076 /* SwifTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwifTools.h; sourceTree = "<group>"; };
 		D796C3EE1E2AD20E00CF8076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D796C3F31E2AD20E00CF8076 /* SwifToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwifToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D796C3F81E2AD20E00CF8076 /* SwiftyFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyFrameworkTests.swift; sourceTree = "<group>"; };
 		D796C3FA1E2AD20E00CF8076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 				D796C3ED1E2AD20E00CF8076 /* SwifTools.h */,
 				D7030BA11E3B78D80053BB13 /* STConstraints.swift */,
 				D796C3EE1E2AD20E00CF8076 /* Info.plist */,
+				AE65327A1E49024B004D12C6 /* STTouchID.swift */,
 			);
 			path = SwifTools;
 			sourceTree = "<group>";
@@ -83,7 +86,7 @@
 		D796C3F71E2AD20E00CF8076 /* SwifToolsTests */ = {
 			isa = PBXGroup;
 			children = (
-				D796C3F81E2AD20E00CF8076 /* SwiftyFrameworkTests.swift */,
+				AE65329D1E4A61E9004D12C6 /* STTouchIDTests.swift */,
 				D796C3FA1E2AD20E00CF8076 /* Info.plist */,
 			);
 			path = SwifToolsTests;
@@ -151,7 +154,7 @@
 				TargetAttributes = {
 					D796C3E91E2AD20E00CF8076 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 5RUJTG3BGA;
+						DevelopmentTeam = PG324D5455;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7030BA21E3B78D80053BB13 /* STConstraints.swift in Sources */,
+				AE65327B1E49024C004D12C6 /* STTouchID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D796C3F91E2AD20E00CF8076 /* SwiftyFrameworkTests.swift in Sources */,
+				AE65329E1E4A61E9004D12C6 /* STTouchIDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +334,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5RUJTG3BGA;
+				DEVELOPMENT_TEAM = PG324D5455;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -351,7 +355,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5RUJTG3BGA;
+				DEVELOPMENT_TEAM = PG324D5455;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -370,9 +374,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5RUJTG3BGA;
-				INFOPLIST_FILE = SwiftyFrameworkTests/Info.plist;
+				INFOPLIST_FILE = SwifToolsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lepierna.SwiftyFrameworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lepierna.SwifToolsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -383,9 +387,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5RUJTG3BGA;
-				INFOPLIST_FILE = SwiftyFrameworkTests/Info.plist;
+				INFOPLIST_FILE = SwifToolsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lepierna.SwiftyFrameworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lepierna.SwifToolsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
