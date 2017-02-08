@@ -13,7 +13,7 @@ lane :bonjour do
     UI.success "Bravo !"
 
     scan(
-        project: "SwiftyFramework/SwiftyFramework.xcodeproj",
+        project: "SwifTools/SwifTools.xcodeproj",
         code_coverage: true
     )
 end
