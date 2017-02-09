@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.license      = "BSD"
   s.authors      = { "Jason Pierna" => "jasonpierna7@gmail.com", "Kévin Le" => "kevints.le@gmail.com" }
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://github.com/ESGIProjects/SwifTools.git", :tag => "#v{s.version}" }
+  s.source       = { :git => "https://github.com/ESGIProjects/SwifTools.git", :tag => "#{s.version}" }
   s.source_files  = "SwifTools", "SwifTools/**/*.{h,m,swift}"
   s.exclude_files = "SwifTools/SwifToolsTests/*"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3'}
