@@ -5,14 +5,18 @@ fastlane documentation
 sudo gem install fastlane
 ```
 # Available Actions
-### bonjour
-```
-fastlane bonjour
-```
-
 ### deploy
 ```
 fastlane deploy
+```
+
+
+----
+
+## iOS
+### ios tests
+```
+fastlane ios tests
 ```
 
 

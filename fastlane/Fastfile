@@ -9,13 +9,31 @@
 # If you want to automatically update fastlane if a new version is available:
 # update_fastlane
 
-lane :bonjour do
-    UI.success "Bravo !"
+default_platform :ios
 
-    scan(
-        project: "SwifTools/SwifTools.xcodeproj",
-        code_coverage: true
-    )
+platform :ios do
+    before_all do
+        ENV["SLACK_URL"] ||= "https://hooks.slack.com/services/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"
+    end
+
+    after_all do
+        slack(message: "Fastlane terminated with success!")
+    end
+
+    error do|lane, exception|
+        slack(
+            message: exception.message,
+            success: false
+        )
+    end
+
+    lane :tests do
+        scan(
+            project: "SwifTools/SwifTools.xcodeproj",
+            code_coverage: true
+        )
+    end
+
 end
 
 lane :deploy do
