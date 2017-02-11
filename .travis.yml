@@ -13,6 +13,6 @@ before_install:
     - gem install bundler
     - bundle install
 script:
-    - bundle exec fastlane bonjour
+    - bundle exec fastlane tests
 after_success:
     - bundle exec fastlane deploy
