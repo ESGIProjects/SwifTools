@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwifTools"
-  s.version      = "0.0.3"
+  s.version      = "1.0.0"
   s.summary      = "A Swift Framework that serves as a development toolbox."
 
   # This description is used to generate tags and improve search results.
