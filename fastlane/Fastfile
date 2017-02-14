@@ -11,29 +11,27 @@
 
 default_platform :ios
 
-platform :ios do
-    before_all do
-        ENV["SLACK_URL"] ||= "https://hooks.slack.com/services/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"
-    end
+before_all do
+    ENV["SLACK_URL"] ||= "https://hooks.slack.com/services/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"
+    slack(message: "Lancement de Fastlane")
+end
 
-    after_all do
-        slack(message: "Fastlane terminated with success!")
-    end
+after_all do
+    slack(message: "Fastlane terminé")
+end
 
-    error do|lane, exception|
-        slack(
-            message: exception.message,
-            success: false
-        )
-    end
+error do|lane, exception|
+    slack(
+        message: exception.message,
+        success: false
+    )
+end
 
-    lane :tests do
-        scan(
-            project: "SwifTools/SwifTools.xcodeproj",
-            code_coverage: true
-        )
-    end
-
+lane :tests do
+    scan(
+        project: "SwifTools/SwifTools.xcodeproj",
+        code_coverage: true
+    )
 end
 
 lane :deploy do
@@ -42,11 +40,14 @@ lane :deploy do
         set_github_release(
             repository_name: "ESGIProjects/SwifTools",
             name: version,
-            tag_name: "v#{version}",
+            tag_name: "#{version}",
             api_token: ENV["GITHUB_TOKEN"],
-            description: changelog_from_git_commits(),
+            description: "Mise à jour v#{version}",
             commitish: "master"
         )
+
+        version_bump_podspec(path: "SwiftTools.podspec", version_number: version)
+        pod_push(path: "SwiftTools.podspec")
     end
 end
 
