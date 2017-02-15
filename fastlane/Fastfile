@@ -37,7 +37,7 @@ platform :ios do
 
     lane :deploy do
         if git_branch() == "master"
-            version = get_version_number(xcodeproj: "SwiftTools/SwiftTools.xcodeproj")
+            version = get_version_number(xcodeproj: "SwifTools/SwifTools.xcodeproj")
             set_github_release(
             repository_name: "ESGIProjects/SwifTools",
             name: version,
@@ -47,8 +47,8 @@ platform :ios do
             commitish: "master"
             )
 
-            version_bump_podspec(path: "SwiftTools.podspec", version_number: version)
-            pod_push(path: "SwiftTools.podspec")
+            version_bump_podspec(path: "SwifTools.podspec", version_number: version)
+            pod_push(path: "SwifTools.podspec")
         end
     end
 
