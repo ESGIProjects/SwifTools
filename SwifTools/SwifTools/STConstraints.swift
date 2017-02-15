@@ -61,11 +61,11 @@ public class STConstraints {
             case .right:
                 applyXAxis(first: firstView.rightAnchor, second: secondView.rightAnchor, constant: constant)
             case .leading:
-                applyXAxis(first: firstView.leadingAnchor, second: secondView.leadingAnchor, constant: constant)
+                applyXAxis(first: firstView.leadingAnchor, second: secondView.leadingAnchor, constant: -constant)
             case .trailing:
                 applyXAxis(first: firstView.trailingAnchor, second: secondView.trailingAnchor, constant: constant)
             case .top:
-                applyYAxis(first: firstView.topAnchor, second: secondView.topAnchor, constant: constant)
+                applyYAxis(first: firstView.topAnchor, second: secondView.topAnchor, constant: -constant)
             case .bottom:
                 applyYAxis(first: firstView.bottomAnchor, second: secondView.bottomAnchor, constant: constant)
             }
@@ -108,7 +108,7 @@ public class STConstraints {
             case .left:
                 applyXAxis(first: firstView.leftAnchor, second: secondView.rightAnchor, constant: constant)
             case .right:
-                applyXAxis(first: firstView.rightAnchor, second: secondView.leftAnchor, constant: constant)
+                applyXAxis(first: firstView.rightAnchor, second: secondView.leftAnchor, constant: -constant)
             case .leading:
                 applyXAxis(first: firstView.leadingAnchor, second: secondView.trailingAnchor, constant: constant)
             case .trailing:
@@ -116,7 +116,7 @@ public class STConstraints {
             case .top:
                 applyYAxis(first: firstView.topAnchor, second: secondView.bottomAnchor, constant: constant)
             case .bottom:
-                applyYAxis(first: firstView.bottomAnchor, second: secondView.topAnchor, constant: constant)
+                applyYAxis(first: firstView.bottomAnchor, second: secondView.topAnchor, constant: -constant)
             }
         }
     }

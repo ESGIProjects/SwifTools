@@ -14,6 +14,8 @@ public class STTouchID {
     
     var context = LAContext()
     
+    public init() {}
+    
     /**
      Check if Touch ID feature is available
      */
