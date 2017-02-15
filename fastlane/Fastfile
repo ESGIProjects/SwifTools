@@ -38,6 +38,8 @@ platform :ios do
     lane :deploy do
         if git_branch() == "master"
             version = get_version_number(xcodeproj: "SwifTools/SwifTools.xcodeproj")
+            release = get_github_release(url: "ESGIProjects/SwifTools", version: version)
+
             set_github_release(
                 repository_name: "ESGIProjects/SwifTools",
                 name: version,
@@ -50,11 +52,21 @@ platform :ios do
             version_bump_podspec(path: "SwifTools.podspec", version_number: version)
             pod_push(path: "SwifTools.podspec")
 
-            ifttt(
-                api_key: "cLbue5LBLQ3FDf8_lBrGX",
-                event_name: "swiftools_release",
-                value1: version
-            )
+            if (release.nil?)
+                # Twitter - Jason
+                ifttt(
+                    api_key: "cLbue5LBLQ3FDf8_lBrGX",
+                    event_name: "swiftools_release",
+                    value1: version
+                )
+
+                # Facebook - Kévin
+                ifttt(
+                    api_key: "cqJTnm49_fl3OnScAz3EAH",
+                    event_name: "swiftools_release",
+                    value1: version
+                )
+            end
         end
     end
 end

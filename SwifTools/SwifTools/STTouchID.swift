@@ -14,6 +14,9 @@ public class STTouchID {
     
     var context = LAContext()
     
+    /**
+     Check if Touch ID feature is available
+     */
     public func isAvailable() -> Bool {
         var error: NSError?
         
@@ -23,6 +26,11 @@ public class STTouchID {
         return true
     }
     
+    /**
+     Display an UIAlertController in order to use Touch ID
+     - parameter message: The message displayed in the UIAlertController
+     - parameter completionHandler: The set of actions triggered when authenticated
+    */
     public func check(message: String, completionHandler: @escaping (Bool, Error?) -> Void) {
         context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: message, reply: completionHandler)
     }
