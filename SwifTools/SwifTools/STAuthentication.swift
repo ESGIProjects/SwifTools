@@ -1,5 +1,5 @@
 //
-//  STTouchID.swift
+//  STAuthentication.swift
 //  SwifTools
 //
 //  Created by Kévin Le on 06/02/2017.
@@ -9,8 +9,7 @@
 import UIKit
 import LocalAuthentication
 
-
-public class STTouchID {
+public class STAuthentication {
     
     var context = LAContext()
     
@@ -21,11 +20,7 @@ public class STTouchID {
      */
     public func isAvailable() -> Bool {
         var error: NSError?
-        
-        guard context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
-            return false
-        }
-        return true
+        return context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error)
     }
     
     /**

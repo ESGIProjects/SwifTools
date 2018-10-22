@@ -21,7 +21,7 @@ class STTouchIDTests: XCTestCase {
             }
         }
         
-        let handler = STTouchID()
+        let handler = STAuthentication()
         handler.context = FakeContext()
         handler.check(message: "Test", completionHandler: { success, _ in
             XCTAssertTrue(success)
