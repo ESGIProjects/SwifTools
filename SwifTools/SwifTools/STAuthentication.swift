@@ -16,7 +16,7 @@ public class STAuthentication {
     public init() {}
     
     /**
-     Check if Touch ID feature is available
+     Check if biometric authentication is available
      */
     public func isAvailable() -> Bool {
         var error: NSError?
@@ -24,7 +24,7 @@ public class STAuthentication {
     }
     
     /**
-     Display an UIAlertController in order to use Touch ID
+     Display an UIAlertController in order to use biometric authentication
      - parameter message: The message displayed in the UIAlertController
      - parameter completionHandler: The set of actions triggered when authenticated
     */

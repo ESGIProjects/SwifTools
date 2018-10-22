@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE65327B1E49024C004D12C6 /* STTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65327A1E49024B004D12C6 /* STTouchID.swift */; };
-		AE65329E1E4A61E9004D12C6 /* STTouchIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65329D1E4A61E9004D12C6 /* STTouchIDTests.swift */; };
+		AE65327B1E49024C004D12C6 /* STAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65327A1E49024B004D12C6 /* STAuthentication.swift */; };
+		AE65329E1E4A61E9004D12C6 /* STAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65329D1E4A61E9004D12C6 /* STAuthenticationTests.swift */; };
 		D7030BA21E3B78D80053BB13 /* STConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7030BA11E3B78D80053BB13 /* STConstraints.swift */; };
 		D796C3F41E2AD20E00CF8076 /* SwifTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D796C3EA1E2AD20E00CF8076 /* SwifTools.framework */; };
 		D796C3FB1E2AD20E00CF8076 /* SwifTools.h in Headers */ = {isa = PBXBuildFile; fileRef = D796C3ED1E2AD20E00CF8076 /* SwifTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AE65327A1E49024B004D12C6 /* STTouchID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STTouchID.swift; sourceTree = "<group>"; };
-		AE65329D1E4A61E9004D12C6 /* STTouchIDTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STTouchIDTests.swift; sourceTree = "<group>"; };
+		AE65327A1E49024B004D12C6 /* STAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STAuthentication.swift; sourceTree = "<group>"; };
+		AE65329D1E4A61E9004D12C6 /* STAuthenticationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STAuthenticationTests.swift; sourceTree = "<group>"; };
 		D7030BA11E3B78D80053BB13 /* STConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STConstraints.swift; sourceTree = "<group>"; };
 		D796C3EA1E2AD20E00CF8076 /* SwifTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwifTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D796C3ED1E2AD20E00CF8076 /* SwifTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwifTools.h; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 				D7030BA11E3B78D80053BB13 /* STConstraints.swift */,
 				D7D209A71E4E6B7200023424 /* STQuickActions.swift */,
 				D796C3EE1E2AD20E00CF8076 /* Info.plist */,
-				AE65327A1E49024B004D12C6 /* STTouchID.swift */,
+				AE65327A1E49024B004D12C6 /* STAuthentication.swift */,
 			);
 			path = SwifTools;
 			sourceTree = "<group>";
@@ -93,7 +93,7 @@
 		D796C3F71E2AD20E00CF8076 /* SwifToolsTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE65329D1E4A61E9004D12C6 /* STTouchIDTests.swift */,
+				AE65329D1E4A61E9004D12C6 /* STAuthenticationTests.swift */,
 				D7D209A91E4E6B7F00023424 /* STQuickActionsTests.swift */,
 				D7FFF9851E4BB47300BB0606 /* STConstraintsTests.swift */,
 				D796C3FA1E2AD20E00CF8076 /* Info.plist */,
@@ -216,7 +216,7 @@
 			files = (
 				D7D209A81E4E6B7200023424 /* STQuickActions.swift in Sources */,
 				D7030BA21E3B78D80053BB13 /* STConstraints.swift in Sources */,
-				AE65327B1E49024C004D12C6 /* STTouchID.swift in Sources */,
+				AE65327B1E49024C004D12C6 /* STAuthentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D209AA1E4E6B7F00023424 /* STQuickActionsTests.swift in Sources */,
-				AE65329E1E4A61E9004D12C6 /* STTouchIDTests.swift in Sources */,
+				AE65329E1E4A61E9004D12C6 /* STAuthenticationTests.swift in Sources */,
 				D7FFF9861E4BB47300BB0606 /* STConstraintsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

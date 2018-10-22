@@ -3,30 +3,26 @@
 # All available actions: https://docs.fastlane.tools/actions
 # can also be listed using the `fastlane actions` command
 
-# Change the syntax highlighting to Ruby
-# All lines starting with a # are ignored when running `fastlane`
-
-# If you want to automatically update fastlane if a new version is available:
-# update_fastlane
+update_fastlane
 
 default_platform :ios
 
 platform :ios do
-    before_all do|lane, options|
-        ENV["SLACK_URL"] ||= "https://hooks.slack.com/services/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"
-        slack(message: "Fastlane #{lane} : lancement")
-    end
+    # before_all do|lane, options|
+    #     ENV["SLACK_URL"] ||= "https://hooks.slack.com/services/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"
+    #     slack(message: "Fastlane #{lane} : lancement")
+    # end
 
-    after_all do|lane, options|
-        slack(message: "Fastlane #{lane} : terminé")
-    end
+    # after_all do|lane, options|
+    #     slack(message: "Fastlane #{lane} : terminé")
+    # end
 
-    error do|lane, exception|
-        slack(
-        message: exception.message,
-        success: false
-        )
-    end
+    # error do|lane, exception|
+    #     slack(
+    #     message: exception.message,
+    #     success: false
+    #     )
+    # end
 
     lane :tests do
         scan(
@@ -52,28 +48,21 @@ platform :ios do
             version_bump_podspec(path: "SwifTools.podspec", version_number: version)
             pod_push(path: "SwifTools.podspec")
 
-            if (release.nil?)
-                # Twitter - Jason
-                ifttt(
-                    api_key: "cLbue5LBLQ3FDf8_lBrGX",
-                    event_name: "swiftools_release",
-                    value1: version
-                )
+            # if (release.nil?)
+            #     # Twitter - Jason
+            #     ifttt(
+            #         api_key: "cLbue5LBLQ3FDf8_lBrGX",
+            #         event_name: "swiftools_release",
+            #         value1: version
+            #     )
 
-                # Facebook - Kévin
-                ifttt(
-                    api_key: "cqJTnm49_fl3OnScAz3EAH",
-                    event_name: "swiftools_release",
-                    value1: version
-                )
-            end
+            #     # Facebook - Kévin
+            #     ifttt(
+            #         api_key: "cqJTnm49_fl3OnScAz3EAH",
+            #         event_name: "swiftools_release",
+            #         value1: version
+            #     )
+            # end
         end
     end
 end
-
-
-# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
-# All available actions: https://docs.fastlane.tools/actions
-
-# fastlane reports which actions are used
-# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer

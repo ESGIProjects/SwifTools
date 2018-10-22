@@ -48,9 +48,9 @@ class STConstraintsTests: XCTestCase {
         
         STConstraints.addConstraints(between: view1, and: view2, sides: [.top])
         
-        let constraint = superview.constraints.first(where: { constraint in
-            return (constraint.firstItem === view1 || constraint.firstItem === view2) && (constraint.secondItem === view1 || constraint.secondItem === view2)
-        })
+        let constraint = superview.constraints.first {
+            ($0.firstItem === view1 || $0.firstItem === view2) && ($0.secondItem === view1 || $0.secondItem === view2)
+        }
         
         if let constraint = constraint {
             XCTAssertTrue(constraint.firstAttribute == .top)

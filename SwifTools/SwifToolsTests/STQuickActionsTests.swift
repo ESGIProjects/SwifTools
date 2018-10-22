@@ -21,8 +21,8 @@ class STQuickActionsTests: XCTestCase {
     }
     
     func testRemove() {
-        manager.add(title: "Test")
-        manager.add(title: "Test")
+        manager.add(title: "")
+        manager.add(title: "")
         manager.remove(.first)
         
         if let count = UIApplication.shared.shortcutItems?.count {
@@ -31,8 +31,8 @@ class STQuickActionsTests: XCTestCase {
     }
     
     func testRemoveAll() {
-        manager.add(title: "Test")
-        manager.add(title: "Test")
+        manager.add(title: "")
+        manager.add(title: "")
         manager.removeAll()
         
         XCTAssertNil(UIApplication.shared.shortcutItems)
