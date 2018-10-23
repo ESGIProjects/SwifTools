@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		406A1B8D217F2DA800AE4853 /* STNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A1B8C217F2DA800AE4853 /* STNetwork.swift */; };
+		406A1B8F217F39E000AE4853 /* STNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A1B8E217F39E000AE4853 /* STNetworkTests.swift */; };
 		AE65327B1E49024C004D12C6 /* STAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65327A1E49024B004D12C6 /* STAuthentication.swift */; };
 		AE65329E1E4A61E9004D12C6 /* STAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65329D1E4A61E9004D12C6 /* STAuthenticationTests.swift */; };
 		D7030BA21E3B78D80053BB13 /* STConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7030BA11E3B78D80053BB13 /* STConstraints.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		406A1B8C217F2DA800AE4853 /* STNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STNetwork.swift; sourceTree = "<group>"; };
+		406A1B8E217F39E000AE4853 /* STNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STNetworkTests.swift; sourceTree = "<group>"; };
 		AE65327A1E49024B004D12C6 /* STAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STAuthentication.swift; sourceTree = "<group>"; };
 		AE65329D1E4A61E9004D12C6 /* STAuthenticationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STAuthenticationTests.swift; sourceTree = "<group>"; };
 		D7030BA11E3B78D80053BB13 /* STConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STConstraints.swift; sourceTree = "<group>"; };
@@ -82,10 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				D796C3ED1E2AD20E00CF8076 /* SwifTools.h */,
+				D796C3EE1E2AD20E00CF8076 /* Info.plist */,
 				D7030BA11E3B78D80053BB13 /* STConstraints.swift */,
 				D7D209A71E4E6B7200023424 /* STQuickActions.swift */,
-				D796C3EE1E2AD20E00CF8076 /* Info.plist */,
 				AE65327A1E49024B004D12C6 /* STAuthentication.swift */,
+				406A1B8C217F2DA800AE4853 /* STNetwork.swift */,
 			);
 			path = SwifTools;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 				D7D209A91E4E6B7F00023424 /* STQuickActionsTests.swift */,
 				D7FFF9851E4BB47300BB0606 /* STConstraintsTests.swift */,
 				D796C3FA1E2AD20E00CF8076 /* Info.plist */,
+				406A1B8E217F39E000AE4853 /* STNetworkTests.swift */,
 			);
 			path = SwifToolsTests;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 				D7D209A81E4E6B7200023424 /* STQuickActions.swift in Sources */,
 				D7030BA21E3B78D80053BB13 /* STConstraints.swift in Sources */,
 				AE65327B1E49024C004D12C6 /* STAuthentication.swift in Sources */,
+				406A1B8D217F2DA800AE4853 /* STNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +234,7 @@
 				D7D209AA1E4E6B7F00023424 /* STQuickActionsTests.swift in Sources */,
 				AE65329E1E4A61E9004D12C6 /* STAuthenticationTests.swift in Sources */,
 				D7FFF9861E4BB47300BB0606 /* STConstraintsTests.swift in Sources */,
+				406A1B8F217F39E000AE4853 /* STNetworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
